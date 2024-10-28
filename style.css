@@ -5,11 +5,24 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #0a192f; /* Dark navy blue background */
-    color: #ccd6f6; /* Light grayish-white text */
-    transition: background-color 0.3s, color 0.3s;
+/* Style for the background video */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures video covers the whole screen */
+    z-index: -1; /* Places video behind all other elements */
 }
+
+/* Body styling remains the same */
+body {
+    background-color: #0a192f; /* Fallback color */
+    color: #ccd6f6;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 .main {
     display: flex;
